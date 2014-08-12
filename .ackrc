@@ -1,0 +1,14 @@
+--smart-case
+
+--type-set=haml=.haml
+--type-set=erb=.erb
+--type-set=sass=.sass
+--type-set=scss=.scss
+--type-set=less=.less
+--type-set=coffee=.coffee
+--type-set=hbs=.handlebars,.hbs
+--type-set=jst=.jst
+--type-set=feature=.feature
+
+--type-add=html=.html.erb,.html.haml,.handlebars,.hbs
+--type-add=css=.scss

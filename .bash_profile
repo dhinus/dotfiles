@@ -1,5 +1,9 @@
+# load bashrc
+test -f $HOME/.bashrc && source $HOME/.bashrc
+
+export TERM=xterm-256color
 export CLICOLOR=1
-export EDITOR=vi
+export EDITOR=vim
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/heroku/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules"
 
@@ -17,6 +21,3 @@ test -x /usr/local/bin/grunt && eval "$(grunt --completion=bash)"
 
 # rbenv
 test -x /usr/local/bin/rbenv && eval "$(rbenv init -)"
-
-# load bashrc
-test -f $HOME/.bashrc && source $HOME/.bashrc

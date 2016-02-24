@@ -22,3 +22,9 @@ test -x /usr/local/bin/grunt && eval "$(grunt --completion=bash)"
 
 # rbenv
 test -x /usr/local/bin/rbenv && eval "$(rbenv init -)"
+
+# emulate pbcopy and pbpaste on Linux
+if [[ -x /usr/bin/xsel ]]; then
+  alias pbcopy='xsel --clipboard --input'
+  alias pbpaste='xsel --clipboard --output'
+fi

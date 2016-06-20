@@ -2,6 +2,7 @@ xset r rate 250 80
 
 setxkbmap -layout us -variant altgr-intl
 
+synclient TapButton1=1
 synclient TapButton3=2
 synclient TapButton2=3
 synclient VertTwoFingerScroll=1

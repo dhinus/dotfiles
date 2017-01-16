@@ -1,3 +1,6 @@
+# My .tmux.conf is a symlink to the one from https://github.com/gpakosz/.tmux
+# This file adds my personal customisation on top of it
+
 unbind C-b
 set -g prefix `
 bind-key ` send-prefix

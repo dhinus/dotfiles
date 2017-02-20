@@ -9,6 +9,9 @@ export NODE_PATH="/usr/local/lib/node_modules"
 
 export PS1='\[\e[1;31m\]\h\[\e[m\] \[\e[0;32m\]\W\[\e[m\]\[\e[0;33m\]$(__git_ps1 " (%s)") \[\e[0;32m\]» \[\e[m\]'
 
+# Prevent closing the shell pressing C-d by mistake
+set -o ignoreeof
+
 test -f /usr/share/git/completion/git-prompt.sh && source /usr/share/git/completion/git-prompt.sh
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}: ${PWD/#$HOME/~}\007"'
 

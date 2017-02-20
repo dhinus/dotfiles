@@ -43,3 +43,9 @@
   pr = !hophop gh pr
 [push]
   default = upstream
+[sendemail]
+  smtpuser = francesconegri@gmail.com
+  smtpserver = smtp.googlemail.com
+  smtpencryption = tls
+  smtpserverport = 587
+  suppresscc = self

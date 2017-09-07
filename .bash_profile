@@ -17,8 +17,6 @@ set -o ignoreeof
 alias be='bundle exec'
 alias flow='node_modules/.bin/flow'
 
-test -f /usr/local/bin/yarn && export PATH="$PATH:`yarn global bin`"
-
 # homebrew-installed bash_completion
 test -f /usr/local/etc/bash_completion && source /usr/local/etc/bash_completion
 

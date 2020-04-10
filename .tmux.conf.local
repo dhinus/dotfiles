@@ -14,8 +14,9 @@ setw -g aggressive-resize on
 setw -g mode-keys vi
 
 # Use current directory for new splits
-bind '%' split-window -h -c '#{pane_current_path}'  # Split panes horizontal
-bind '"' split-window -v -c '#{pane_current_path}'  # Split panes vertically
+tmux_conf_new_pane_retain_current_path=true
+bind '%' split-window -h  # Split panes horizontal
+bind '"' split-window -v  # Split panes vertically
 
 # Smart pane switching with awareness of vim splits
 # https://github.com/christoomey/vim-tmux-navigator
@@ -23,4 +24,3 @@ bind -n C-h run "(tmux display-message -p '#{pane_current_command}' | grep -iqE 
 bind -n C-j run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|n?vim?)(diff)?$' && tmux send-keys C-j) || tmux select-pane -D"
 bind -n C-k run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|n?vim?)(diff)?$' && tmux send-keys C-k) || tmux select-pane -U"
 bind -n C-l run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|n?vim?)(diff)?$' && tmux send-keys C-l) || tmux select-pane -R"
-bind -n C-\ run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|n?vim?)(diff)?$' && tmux send-keys 'C-\\') || tmux select-pane -l"

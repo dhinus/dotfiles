@@ -43,6 +43,8 @@
   pr = !hophop gh pr
 [push]
   default = upstream
+[pull]
+  ff = only
 [sendemail]
   smtpuser = francesconegri@gmail.com
   smtpserver = smtp.googlemail.com

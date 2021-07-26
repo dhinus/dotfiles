@@ -1,6 +1,3 @@
-# load bashrc
-test -f $HOME/.bashrc && source $HOME/.bashrc
-
 export TERM=xterm-256color
 export CLICOLOR=1
 export EDITOR=vim
@@ -39,3 +36,6 @@ fi
 if [[ -x /usr/local/bin/direnv ]]; then
   eval "$(direnv hook bash)"
 fi
+
+# load bashrc
+test -f $HOME/.bashrc && source $HOME/.bashrc

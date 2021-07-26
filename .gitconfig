@@ -35,6 +35,7 @@
   lg = log -p
   lol = log --graph --decorate --pretty=oneline --date-order --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --date-order --abbrev-commit --all
+  glog = log --graph --submodule --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
   ls = ls-files
   # Show files ignored by git:
   ign = status --ignored

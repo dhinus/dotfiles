@@ -10,7 +10,7 @@ elif [[ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]]; then
   source /usr/local/etc/bash_completion.d/git-prompt.sh
 fi
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}: ${PWD/#$HOME/~}\007"'
-export PS1='\[\e[1;31m\]\h\[\e[m\] \[\e[0;32m\]\W\[\e[m\]\[\e[0;33m\]$(type -t __git_ps1 >/dev/null && __git_ps1) \[\e[0;32m\]\$ \[\e[m\]'
+export PS1='\[\e[0;32m\]\W\[\e[m\]\[\e[0;33m\]$(type -t __git_ps1 >/dev/null && __git_ps1) \[\e[0;32m\]\$ \[\e[m\]'
 
 # Prevent closing the shell pressing C-d by mistake
 set -o ignoreeof

@@ -39,9 +39,6 @@
   ls = ls-files
   # Show files ignored by git:
   ign = status --ignored
-  # https://github.com/buildo/hophop
-  feature = !hophop gh feature
-  pr = !hophop gh pr
 [push]
   default = upstream
 [pull]

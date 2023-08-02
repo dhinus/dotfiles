@@ -3,6 +3,8 @@ export CLICOLOR=1
 export EDITOR=vim
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 if [[ -f /usr/share/git/completion/git-prompt.sh ]]; then
   source /usr/share/git/completion/git-prompt.sh

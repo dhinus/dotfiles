@@ -1,6 +1,8 @@
 [user]
   name = Francesco Negri
   email = francesconegri@gmail.com
+[includeIf "gitdir:~/wmf/"]
+  path = ~/wmf/gitconfig
 [core]
   excludesfile = ~/.gitignore_global
   quotepath = false

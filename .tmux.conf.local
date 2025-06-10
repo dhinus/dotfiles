@@ -13,8 +13,10 @@ setw -g aggressive-resize on
 # Use vim keybindings in copy mode
 setw -g mode-keys vi
 
-# Use current directory for new splits
+# Use current directory for new splits but not for new windows
 tmux_conf_new_pane_retain_current_path=true
+tmux_conf_new_window_retain_current_path=false
+
 bind '%' split-window -h  # Split panes horizontal
 bind '"' split-window -v  # Split panes vertically
 
